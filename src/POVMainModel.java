@@ -27,7 +27,7 @@ public class POVMainModel {
         this.q = qArray;
         this.demand = dm;
         this.r = r;
-        this.model = new Model("POV Resolution with Choco-Solver");
+        this.model = new Model("CSP Resolution with Choco-Solver");
         this.solver = this.model.getSolver();
         this.positionClass = model.intVarArray("positionClass", nbrCars, 0, nbrClasses - 1);
         this.optionPosition = model.intVarMatrix("optionPosition", nbrOptions, nbrCars, 0, 1);

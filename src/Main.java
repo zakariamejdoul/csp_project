@@ -32,7 +32,7 @@ public class Main {
         POVMainModel povModel = new POVMainModel(25, 5, 12, demand3, p, q, r2);
         povModel.solver.showShortStatistics();
         povModel.solver.solve();
-        System.out.println("\n=========== POV Resolution with Choco-Solver ===========\n");
+        System.out.println("\n=========== CSP Resolution with Choco-Solver ===========\n");
         System.out.println(povModel.printSolution());
     }
 }
